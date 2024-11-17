@@ -12,40 +12,39 @@ orderBtns.forEach((btn) => {
 
 
 const swiper = new Swiper('.card_Wrapper', {
-    // Optional parameters
-    loop: true,
-    spaceBetween:30,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable:true,
-      dynamicBullets:true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    loop: true, // Enable looping
+    centeredSlides: true, // Keep the active slide in the center
+    spaceBetween: 30, // Space between slides (optional)
+    slidesPerView: 5, // Number of slides to display at once
 
-
-    //break points
-    breakpoints : {
-        0:{
-            slidesPerView:1
+    // Breakpoints (if needed for responsive design)
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
         },
-        768:{
-            slidesPerView:2
-
+        768: {
+            slidesPerView: 2,
         },
-        1024:{
-            slidesPerView:3
+        1024: {
+            slidesPerView: 3,
         }
-    }
-  
+    },
 
-  });
+    // Loop behavior and additional slides
+    loopAdditionalSlides: 3, // Preload next 3 slides for smooth transition
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Optional: Adjust autoplay (if needed)
+    
+});
 
 
 const sliderTabs = document.querySelectorAll(".slider-tab");
