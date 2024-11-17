@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -47,15 +49,7 @@ a{
     /* padding-top: 1vw; */
 }
 body{
-    background: linear-gradient(to right,
-       
-    
-    #0f2027
-    ,
-    #203a43
-    , 
-    #2c5364
-);
+    background: #000;
 }
 .anchor a{
     text-decoration: none;
@@ -444,3 +438,59 @@ li{
 
 }
 /*this is total area of dev ends*/
+
+ /* Menu */
+
+.menu {
+    padding: 2vw 5vw;
+}
+
+.menu h1, .menu h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5vw;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+.menu h3 {
+    font-size: 3vw;
+}
+
+.items {
+    position: relative;
+    display: flex;
+    gap: 1.5vw;
+}
+
+.item {
+    width: 20%;
+    position: relative;
+    background: #344966;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.item-image {
+    width: 100%;
+}
+
+.item-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-bottom button {
+    font-family: "Poppins";
+    font-weight: 600;
+    height: max-content;
+    padding: 0.5vw 0.7vw;
+    border-radius: 5px;
+    font-size: 1vw;
+}
