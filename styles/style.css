@@ -10,7 +10,6 @@ body, html {
 }
 
 
-
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5'); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 * {
@@ -389,3 +388,61 @@ li{
 
 }
 /*this is total area of dev ends*/
+/* footer css start */
+.Footer{
+    background-color: #0D1428;
+
+}
+.Abt{
+    color: rgb(160, 170, 181);
+    margin-left: 30px;
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.l1{
+    color: aliceblue;
+    list-style: none;
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#ftr-list {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+}
+.ftrlogo{
+    display: flex;
+    height: 90px;
+    margin: 30px;
+}
+.uprftr{
+    align-items: center;
+}
+.icons{
+    display: flex;
+    float: right;
+    color: rgb(160, 170, 181);
+    margin-top: 10px;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    
+}
+.ftricon{
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+/* Footer css ends */
