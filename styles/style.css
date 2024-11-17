@@ -65,7 +65,9 @@ body{
     padding: 0 0.5vw;
     width: 8vw;;
 }
-
+h2{
+    color:#344966;
+}
 .login{
     width: 6vw;
     height: 3vw;
@@ -99,10 +101,10 @@ a{
     list-style: none;
 }
 .card-list .card-item .card-link{ /* bloack of the card*/
-    width: 390px;
+    width: 270px;
     display: block;
     background: white;
-    padding: 18px;
+    padding: 5px 5px 5px;
     border-radius: 10px;
     border: 2px solid transparent; /* without this line you cant change the color */
     text-decoration: none;
@@ -118,7 +120,7 @@ a{
 
 }
 .card_Wrapper{
-    max-width: 1600px;
+    max-width: 920px;
     
 }
 
@@ -179,6 +181,20 @@ a{
     background-color: #ff6347;  /* For example, a tomato red for the active bullet */
 }
 
+.swiper-button-prev {
+    background-size: 20px 20px; /* Adjust the size of the icon */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    
+
+}
+
+.swiper-button-next {
+    background-size: 20px 20px; /* Adjust the size of the icon */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+}
+
 
 @media screen and (max-width:700px){
     .card_Wrapper{
@@ -199,10 +215,12 @@ a{
 
 
 }
-
+.slider-tab{
+    font-size: 20px;
+}
 .slider-container{
     overflow: hidden;
-    height: 650px;
+    height: 590px;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 100px;
@@ -222,10 +240,10 @@ a{
 
     height:590px;
 
-    background-image: url("https://wallpapers.com/images/hd/mexican-pride-wallpaper-r6k9yrm2bndpphak.jpg");
+    background-image: url("../assets/pic6.webp");
     background-size: 100% 100%;
 
-    display: flex;
+    background-position: center;
 
     align-items: end;
 }
@@ -244,10 +262,10 @@ a{
 
     height:590px;
 
-    background-image: url("https://images5.alphacoders.com/568/568710.jpg");
+    background-image: url("../assets/Untitled design.png");
 
     display: flex;
-    background-size: 100% 100%;
+    background-position: center;
 
     align-items: end;
 }
@@ -265,14 +283,35 @@ a{
 
     height:590px;
 
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/046/395/042/large/neon-frame-effect-white-eagle-a-symbol-of-poland-glow-black-background-free-video.jpg");
+    background-image: url("../assets/pic3.png");
 
     display: flex;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
 
     align-items: end;
 }
+.slider-wrapper .slider-item:nth-child(4)::before{
 
+    position: absolute;
+
+    content: "";
+
+    left: 5%;
+
+    top: 40;
+
+    width: 90%;
+
+    height:590px;
+
+    background-image: url("https://watermark.lovepik.com/photo/20211208/large/lovepik-restaurant-back-cooking-room-picture_501582766.jpg");
+
+    display: flex;
+    background-position: center;
+
+    align-items: end;
+}
 
 .slider-wrapper .slider-item .slide-content{
 
@@ -340,7 +379,7 @@ a{
 
         height: 35px;
 
-        width: 120px;
+        width: 50px;
 
         text-transform: uppercase;
 
@@ -381,7 +420,7 @@ li{
 .slider-pagination .slider-indicator{
     position: absolute;
     top: 0px;
-    width: 290px;
+    width: 200px;
     bottom: -0px;
     left: 0px;
     border-bottom: 2px solid white;
