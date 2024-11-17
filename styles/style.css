@@ -50,6 +50,7 @@ a{
 }
 body{
     background: #0D1428;
+    overflow-x: hidden;
 }
 .anchor a{
     text-decoration: none;
@@ -554,7 +555,7 @@ hr {
     font-style: normal;
 }
 
-#orders-section .orders-list {
+#orders-section .orders {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -568,7 +569,7 @@ hr {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    padding: 2vw 0;
+    /* padding: 2vw 0; */
     gap: 1vw;
 }
 
@@ -581,10 +582,12 @@ hr {
 
 .order-btn {
     color: black;
+    background: white;
 }
 /* footer css start */
 .Footer{
     background-color: #0D1428;
+    margin-top: 500px;
 
 }
 .Abt{
@@ -640,3 +643,33 @@ hr {
     font-size: 20px;
 }
 /* Footer css ends */
+
+
+/* Order Section */
+
+.orders-section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    padding: 5vw 0;
+}
+
+.orders {
+    margin-top: 20vw;
+}
+
+.orders .order {
+    position: relative;
+    height: 20vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.order img {
+    height: 90%;
+}

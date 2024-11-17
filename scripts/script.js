@@ -2,11 +2,22 @@
 
 const orderBtns = document.querySelectorAll(".order-btn");
 
+const orders = document.querySelector(".orders");
+
+
 orderBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
         const item = btn.closest(".item");
 
-        console.log(item.children[1].children[0]);
+        const name = item.children[1].children[0].innerText;
+        const image = item.children[0].children[0].getAttribute("src");
+
+        orders.innerHTML =  `<div class="order">
+        <img src=${image}></div>
+        <h3>${name}</h3>
+        <p>Token Number = 7</p>`;
+
+        console.log("A");
     })
 })
 
