@@ -1,4 +1,14 @@
+// Orders  section
 
+const orderBtns = document.querySelectorAll(".order-btn");
+
+orderBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const item = btn.closest(".item");
+
+        console.log(item.children[1].children[0]);
+    })
+})
 
 
 const swiper = new Swiper('.card_Wrapper', {
