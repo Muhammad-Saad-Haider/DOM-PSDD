@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body, html {
@@ -493,4 +494,50 @@ li{
     padding: 0.5vw 0.7vw;
     border-radius: 5px;
     font-size: 1vw;
+}
+
+/* Orders Section */
+
+hr {
+    margin: 4vw 5vw;
+}
+
+#orders-section {
+    margin: 0 5vw;
+}
+
+#orders-section h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 7vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#orders-section .orders-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.orders {
+    background: #1a2545;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2vw 0;
+    gap: 1vw;
+}
+
+.order {
+    width: 95%;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 10vw;
+}
+
+.order-btn {
+    color: black;
 }
