@@ -49,7 +49,7 @@ a{
     /* padding-top: 1vw; */
 }
 body{
-    background: #000;
+    background: #0D1428;
 }
 .anchor a{
     text-decoration: none;
@@ -497,7 +497,6 @@ li{
     border-radius: 5px;
     font-size: 1vw;
 }
-<<<<<<< HEAD
 
 /* Orders Section */
 
@@ -544,7 +543,6 @@ hr {
 .order-btn {
     color: black;
 }
-=======
 /* footer css start */
 .Footer{
     background-color: #0D1428;
@@ -603,4 +601,3 @@ hr {
     font-size: 20px;
 }
 /* Footer css ends */
->>>>>>> Pratibha
