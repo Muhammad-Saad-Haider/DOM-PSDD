@@ -17,7 +17,7 @@ orderBtns.forEach((btn) => {
         orders.innerHTML =  `<div class="order">
         <img src=${image}></div>
         <h3>${name}</h3>
-        <p>Token Number = ${ran}</p>`;
+        <p>Token Number = ${ran+1}</p>`;
 
         console.log("A");
     })
