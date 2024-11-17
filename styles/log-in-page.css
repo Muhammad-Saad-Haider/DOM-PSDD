@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #04a9f4;
+    background-color: #0D1428;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +167,7 @@ body .back-page {
 }
 
 .form-page .form form input[type="submit"] {
-    background-color: #04a9f4;
+    background-color: #0D1428;
     border: none;
     color: #fff;
     max-width: 100px;
@@ -179,7 +179,7 @@ body .back-page {
 }
 
 .form-page .signup-form form input[type="submit"] {
-    background-color: #fd5c63;
+    background-color: #435176;
 }
 
 .form-page .form form a {

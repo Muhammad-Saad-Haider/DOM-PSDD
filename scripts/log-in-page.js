@@ -16,7 +16,7 @@ signupBtn.addEventListener("click", () => {
         ]
     });
 
-    body.style.backgroundColor = "#fd5c63";
+    body.style.backgroundColor = "#5b6fa6";
     
     gsap.to(".signin-form", {
         delay: 0,
@@ -24,7 +24,7 @@ signupBtn.addEventListener("click", () => {
     });
     
     gsap.to(".signup-form", {
-        delay: 0.2,
+        delay: 0.4,
         left: "0%",
     });
 });
@@ -41,7 +41,7 @@ signinBtn.addEventListener("click", () => {
         ]
     });
     
-    body.style.backgroundColor = "#04a9f4";
+    body.style.backgroundColor = "#0D1428";
     
     gsap.to(".signin-form", {
         delay: 0.2,
