@@ -4,6 +4,8 @@ const orderBtns = document.querySelectorAll(".order-btn");
 
 const orders = document.querySelector(".orders");
 
+const ran = Math.floor(Math.random()*100);
+
 
 orderBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -15,7 +17,7 @@ orderBtns.forEach((btn) => {
         orders.innerHTML =  `<div class="order">
         <img src=${image}></div>
         <h3>${name}</h3>
-        <p>Token Number = 7</p>`;
+        <p>Token Number = ${ran}</p>`;
 
         console.log("A");
     })
