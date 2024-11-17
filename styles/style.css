@@ -8,3 +8,384 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
+
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+* {
+    font-family: "Helvatica", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border:1px solid rgba(0,0,0,0.5);
+    /* padding: 1vw 0; */
+    height: 5vw;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.anchor{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height:3vw;
+    padding-top: 1vw;
+}
+body{
+    background: linear-gradient(to right,
+       
+    
+    #0f2027
+    ,
+    #203a43
+    , 
+    #2c5364
+);
+}
+.anchor a{
+    text-decoration: none;
+    color:white;
+    font-size: 1vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5vw;
+    width: 8vw;;
+}
+
+.login{
+    width: 6vw;
+    height: 3vw;
+    border-radius: 7px;
+    font-size: 1.1vw;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    border :none;
+    margin-left:2vw ;
+    background-color: #CD3D3F;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    width: 80%;
+    overflow: hidden;
+
+    
+}
+
+.card-list .card-item{ /* used for not making like tradition list*/
+    list-style: none;
+}
+.card-list .card-item .card-link{ /* bloack of the card*/
+    width: 390px;
+    display: block;
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    border: 2px solid transparent; /* without this line you cant change the color */
+    text-decoration: none;
+    margin-bottom: 100px;
+    
+}
+
+.card-list .card-image .card-link{ /* defining the sizes*/
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.card_Wrapper{
+    max-width: 1600px;
+    
+}
+
+.card-list .card-link .badge{ /*used to make circular around button*/
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 20px 0px 18px;
+    padding-top: 20px;
+    padding-top: 5px;
+    width: fit-content;
+    background: rgb(220, 118, 212);
+    font-size: 15px;
+    font: bold;
+
+    border-radius: 18px;
+}
+
+.card-list .card-link .card-button{
+    color: blue;
+    height: 45px;width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: none;
+    margin-top: 10px;
+
+ 
+    border: 3px solid rgb(13, 13, 105);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: white;
+    background: #106ea1;
+    
+}
+.card-list .card-item .card-link:hover{
+    border-color: #0f0568;
+}
+
+.swiper-pagination{
+    position: relative;
+    bottom: 0px;
+    color: red;
+    
+}
+.swiper-pagination-bullet{
+    background-color: red;
+}
+.container .swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
+    background-color: red;  /* Change the bullet color to red */
+}
+
+/* Optional: Change the active bullet color (if you want it to be a different color when active) */
+.container .swiper-pagination-bullet-active {
+    background-color: #ff6347;  /* For example, a tomato red for the active bullet */
+}
+
+
+@media screen and (max-width:700px){
+    .card_Wrapper{
+        margin: 0px 10px 25px;
+    }
+    .card_Wrapper .s-button{
+        display: none;
+    }
+}
+
+/* writing for upper slider*/
+
+
+
+.slider-wrapper .slider-item{
+
+    position: relative;
+
+
+}
+
+.slider-container{
+    overflow: hidden;
+    height: 650px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.slider-wrapper .slider-item::before{
+
+    position: absolute;
+
+    content: "";
+
+    left: 5%;
+
+    top: 40;
+
+    width: 90%;
+
+    height:590px;
+
+    background-image: url("https://wallpapers.com/images/hd/mexican-pride-wallpaper-r6k9yrm2bndpphak.jpg");
+    background-size: 100% 100%;
+
+    display: flex;
+
+    align-items: end;
+}
+
+.slider-wrapper .slider-item:nth-child(2)::before{
+
+    position: absolute;
+
+    content: "";
+
+    left: 5%;
+
+    top: 40;
+
+    width: 90%;
+
+    height:590px;
+
+    background-image: url("https://images5.alphacoders.com/568/568710.jpg");
+
+    display: flex;
+    background-size: 100% 100%;
+
+    align-items: end;
+}
+.slider-wrapper .slider-item:nth-child(3)::before{
+
+    position: absolute;
+
+    content: "";
+
+    left: 5%;
+
+    top: 40;
+
+    width: 90%;
+
+    height:590px;
+
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/046/395/042/large/neon-frame-effect-white-eagle-a-symbol-of-poland-glow-black-background-free-video.jpg");
+
+    display: flex;
+    background-size: 100% 100%;
+
+    align-items: end;
+}
+
+
+.slider-wrapper .slider-item .slide-content{
+
+    color: aliceblue;
+
+    z-index: 0;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 0 20px 10px;
+
+    max-width: 1550px;
+
+    position: relative;
+    top: 250px;
+    left: 100px;
+}
+
+
+
+.slider-item .slide-content .slide-title{
+
+    display: flex;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    margin-top: 5px;
+
+    text-transform: uppercase;
+
+
+
+
+
+}
+
+    .slider-item .slide-content .slide-description{
+
+        margin-top: 25px;
+
+        line-height: 35px;
+
+    }
+
+    .slider-item .slide-content .slide-button{
+
+        color: aliceblue;
+
+        display: flex;
+
+        margin-top: 25px;
+        
+
+        font-size: 0.8rem;
+
+        font-weight: 8000;
+
+        text-align: center;
+
+        letter-spacing: 1px;
+
+        height: 35px;
+
+        width: 120px;
+
+        text-transform: uppercase;
+
+        text-decoration: none;
+
+        border: 2px solid white;
+        justify-content: center;
+        align-items: center;
+
+}
+li{
+    list-style: none;
+}
+.slider-item .slide-content .slide-button:hover{
+
+    color: black;
+
+    background: white;
+
+}
+
+.slider-container .slider-controls{
+    position: absolute;
+    top: 450px;;
+    left: 8%;
+    right: 6%;
+    color: #fff;
+    overflow-x:auto ;
+    width: none
+    ;
+}
+.slider-controls .slider-pagination{
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.slider-pagination .slider-indicator{
+    position: absolute;
+    top: 0px;
+    width: 290px;
+    bottom: -0px;
+    left: 0px;
+    border-bottom: 2px solid white;
+    transition: 0.4s ease-in-out;
+
+}
+/*this is total area of dev ends*/
