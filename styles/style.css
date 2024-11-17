@@ -21,27 +21,30 @@ body, html {
 }
 .nav{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border:1px solid rgba(0,0,0,0.5);
-    /* padding: 1vw 0; */
-    height: 5vw;
+    padding: 1vw 3vw;
     position: relative;
+    background-color: #0D1428;
 }
 a{
     text-decoration: none;
     color: black;
 }
 .anchor{
-    height: 100%;
+    /* height: 100%; */
     display:flex;
     justify-content: center;
     align-items: center;
+    gap: 1vw;
 }
 
 .logo img{
-    height:3vw;
-    padding-top: 1vw;
+    height:5vw;
+    width:5vw;
+    margin-left: 0.1vw;
+    /* padding-top: 1vw; */
 }
 body{
     background: linear-gradient(to right,
@@ -58,12 +61,11 @@ body{
     text-decoration: none;
     color:white;
     font-size: 1vw;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 0.5vw;
-    width: 8vw;;
 }
 
 .login{
@@ -75,12 +77,17 @@ body{
     font-family: "Poppins", sans-serif;
     border :none;
     margin-left:2vw ;
-    background-color: #CD3D3F;
+    background-color: #5b6fa6;
     color: white;
     cursor: pointer;
 }
 a{
     text-decoration: none;
+}
+
+.links {
+    display: flex;
+    
 }
 
 .container{
@@ -95,6 +102,54 @@ a{
     
 }
 
+/* navbar animation */
+.anchor a {
+    display: inline-block;
+    position: relative;
+  }
+  
+.anchor a::after {
+    text-decoration: none;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.anchor a:hover::after {
+    text-decoration: none;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.searchbtn{
+    display:flex;
+    gap:0.5vw
+}
+ .searchbtn input{
+    border:none;
+    height:2.5vw;
+    width:25vw;
+    border-radius: 5px;
+    font-size:large;
+    background-color: #5b6fa6;
+    color:white;
+}
+.searchbtn button{
+    border:none;
+    height:2.5vw;
+    width:4vw;
+    border-radius: 5px;
+    background-color: #5b6fa6;
+    color:white;
+}
+
+/* dev ka portion */
 .card-list .card-item{ /* used for not making like tradition list*/
     list-style: none;
 }
