@@ -4,11 +4,13 @@ const orderBtns = document.querySelectorAll(".order-btn");
 
 const orders = document.querySelector(".orders");
 
-const ran = Math.floor(Math.random()*100);
+
 
 
 orderBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
+    
+    btn.addEventListener("click", async() => {
+        const ran = Math.floor(Math.random()*100);
         const item = btn.closest(".item");
 
         const name = item.children[1].children[0].innerText;
@@ -20,6 +22,21 @@ orderBtns.forEach((btn) => {
         <p>Token Number = ${ran+1}</p>`;
 
         console.log("A");
+        console.log({name: name, Token:ran});
+        try {
+            const response = await fetch("http://localhost:3000/save", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({name: name, Token: ran}),
+            });
+    
+            const result = await response.json();
+            alert(result.message);
+          } catch (error) {
+            console.error("Error:", error);
+          }
     })
 })
 
